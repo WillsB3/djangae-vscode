@@ -1,0 +1,28 @@
+{% load staticfiles %}
+
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7 {{ page_class }}" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8 {{ page_class }}" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9 {{ page_class }}" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js {{ page_class }}" lang="">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>{% block page_title %}👋 🌎{% endblock %}</title>
+  <meta name="description" content="">
+  <style>
+    html {
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  {% block body %}
+    {% block content %}{% endblock content %}
+  {% endblock body%}
+</body>
+</html>
